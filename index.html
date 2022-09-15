@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="JSON.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <div class="page-container block min-w-full ... md:container md:mx-auto">
+        <div class="page-inner w-screen">
+
+            <div class="fashion-wrapper w-full" >
+                <div
+                    class="header bg-emerald-500 flex justify-around h-fit py-5 px-2 flex-wrap  items-center font-bold fixed w-full mb-11">
+                    <div class="text-zinc-700 py-3">
+                        <p>FashionClub</p>
+
+
+                    </div>
+                    <ul class="flex text-base text-white py-3">
+                        <li class="px-1.5 hover:bg-zinc-500 "><a href="#Home">Home</a></li>
+                        <li class="px-1.5 hover:bg-zinc-500 "><a href="#Bags">Bags</a></li>
+                        <li class="px-1.5 hover:bg-zinc-500 "><a href="#Wears">Wears</a></li>
+                        <li class="px-1.5 hover:bg-zinc-500 "><a href="#Cars">Cars</a></li>
+                        <li class="px-1.5 hover:bg-zinc-500 ">Utensils</li>
+                    </ul>
+                    <label class="relative block py-3">
+                        <span class="sr-only">Search</span>
+                        <span class="absolute inset-y-0 left-0 flex items-center pl-2">
+                            <svg class="h-5 w-5 fill-slate-300" viewBox="0 0 20 20">
+
+                            </svg>
+                        </span>
+                        <input
+                            class="placeholder:italic placeholder:text-slate-400 block bg-white w-full border border-slate-300 rounded-md py-2 pl-9 pr-3 shadow-sm focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 sm:text-sm"
+                            placeholder="Search for anything..." type="text" name="search" />
+                    </label>
+                    <div class="block py-3">
+                        <span class="p-2 border-2 border-white rounded-full"><i class="far fa-user"></i></span>
+                        <span class="p-2 border-2 border-white rounded-xl relative pt-4">
+                            <span
+                                class="absolute text-center p-1 w-6 h-6 top-0 right-0 z-10 text-xs bg-rose-500 rounded-full text-white border-none"
+                                id="cartNum">0</span>
+                                <a href="cartPage.html"><i class="fas fa-cart-plus text-2xl"></i></a></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center py-5 text-2xl border-slate-400 border pt-64 bg-emerald-100">
+                <h1 class="font-bold bg-emerald-400 py-3 w-1/5 text-center rounded-md shadow hover:shadow-lg" id="CBags">
+                   Bags
+                </h1>
+            </div>
+            <div class="image-container flex  w-full h-full px-3 py-4 bg-slate-100 justify-around flex-wrap"
+                id="bagContainer">
+            </div>
+            <div class="flex justify-center py-5 text-2xl border-slate-400 border">
+                <h1 class="font-bold bg-emerald-400 py-3 w-1/5 text-center rounded-md shadow hover:shadow-lg"
+                    id="Wears">Shirts
+                </h1>
+            </div>
+            <div class="rounded-full p-2 bg-emerald-500 w-fit fixed top-1/2 text-2xl text-white right-0" onclick="topFunction()" id="toTop"> <i class="fas fa-chevron-up"></i></div>
+            <div class="image-container flex  w-full h-full px-3 py-4 bg-slate-100 justify-around flex-wrap"
+                id="shirtContainer">
+            </div>
+            <div class="flex justify-center py-5 text-2xl border-slate-400 border">
+                <h1 class="font-bold bg-emerald-400 py-3 w-1/5 text-center rounded-md shadow hover:shadow-lg" id="Cars">
+                    Cars
+                </h1>
+            </div>
+            <div class="image-container flex  w-full h-full px-3 py-4 bg-slate-100 justify-around flex-wrap"
+                id="carContainer">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
